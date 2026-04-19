@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Signature Cuts & Beauty</title>
+
+<style>
+
+/* ===== GLOBAL RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#F9F6F1;
+    color:#222;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* ===== HEADER ===== */
+header{
+    background:#00012A;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#fff;
+    text-decoration:none;
+    font-size:21px;
+    font-weight:bold;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:22px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color:#6BD425;
+}
+
+/* ===== HERO ===== */
+.sectionFirst{
+    padding:75px 0;
+}
+
+.sectionFirst .content{
+    max-width:680px;
+}
+
+.address{
+    font-size:14px;
+    color:#555;
+}
+
+.heading{
+    font-size:36px;
+    margin:15px 0;
+}
+
+.para{
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+/* ===== ABOUT ===== */
+.sectionSecond{
+    padding:60px 0;
+}
+
+.wrapper{
+    display:flex;
+    gap:35px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.fourIMG{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.fourIMG img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.textInfo{
+    max-width:450px;
+}
+
+.greet{
+    color:#6BD425;
+    font-weight:bold;
+}
+
+.title{
+    margin:10px 0;
+}
+
+/* ===== SERVICES ===== */
+.sectionThree{
+    padding:65px 0;
+}
+
+.sectionThree h2{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.sectionThree p{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.servicesBox{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:18px;
+}
+
+.box{
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.box h2{
+    margin-bottom:10px;
+}
+
+/* ===== EXTRA INFO SECTION ===== */
+.sectionExtra{
+    padding:60px 0;
+    text-align:center;
+}
+
+.sectionExtra p{
+    max-width:700px;
+    margin:10px auto;
+}
+
+/* ===== CTA ===== */
+.cta{
+    background:#00012A;
+    color:#fff;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.cta a{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#6BD425;
+    color:#000;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#fff;
+    padding:20px 0;
+}
+
+.footerContent{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    font-size:14px;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:600px){
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .fourIMG img{
+        width:100%;
+        height:150px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+<div class="container navbar">
+
+<a href="#" class="logo">
+<img src="./images/comb.jpg" alt="Salon logo">
+Signature Cuts & Beauty
+</a>
+
+<nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="reviews.html">Reviews</a></li>				
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section class="sectionFirst">
+<div class="container">
+<div class="content">
+
+<div class="address">📍 Vanderbijlpark & Braamfontein, South Africa</div>
+
+<h2 class="heading">Style. Precision. Confidence.</h2>
+
+<p class="para">
+At Nicka’s Touch Salon & Romeo the Barber, we believe your hair is a reflection of your identity. 
+That’s why we combine creativity, precision, and care to give you a look that feels right for you.
+</p>
+
+<p class="para">
+Whether you're looking for clean, modern fades or detailed, long-lasting braids, our goal is simple:
+to make sure you leave looking sharp and feeling confident every single time.
+</p>
+
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="sectionSecond">
+<div class="container wrapper">
+
+<div class="fourIMG">
+<img src="./images/barber1.jpg">
+<img src="./images/braids1.jpg">
+<img src="./images/barber2.jpg">
+<img src="./images/braids2.jpg">
+</div>
+
+<div class="textInfo">
+<div class="greet">Who We Are</div>
+
+<h2 class="title">A Complete Hair Experience</h2>
+
+<p class="para">
+Nicka’s Touch specializes in protective and stylish braiding that is neat, comfortable, and long-lasting. 
+Romeo the Barber focuses on precision cuts, fades, and grooming that match your personal style.
+</p>
+
+<p class="para">
+Together, we offer a full-service experience in a relaxed and professional environment where every client is treated with care and attention.
+</p>
+
+</div>
+
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="sectionThree">
+<div class="container">
+
+<h2>Our Services</h2>
+<p>Professional hair care tailored to your style and needs.</p>
+
+<div class="servicesBox">
+
+<div class="box">
+<h2>Braiding</h2>
+<p>Box braids, knotless braids, cornrows, and protective styles.</p>
+</div>
+
+<div class="box">
+<h2>Haircuts</h2>
+<p>Clean fades, tapers, and modern barber styles.</p>
+</div>
+
+<div class="box">
+<h2>Styling</h2>
+<p>Custom looks for everyday wear and special occasions.</p>
+</div>
+
+<div class="box">
+<h2>Grooming</h2>
+<p>Beard trims and finishing touches for a polished look.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- EXTRA INFO -->
+<section class="sectionExtra">
+<div class="container">
+
+<h2>Why Choose Us</h2>
+
+<p>
+We focus on quality, consistency, and customer satisfaction. Every service is done with attention to detail,
+ensuring you get results that last and match your expectations.
+</p>
+
+<p>
+We take time to understand your style before starting, so you always leave with a look that suits you.
+Walk-ins are welcome, but bookings are recommended for faster service.
+</p>
+
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<h2>Ready for a Fresh Look?</h2>
+<p>Contact us today and book your appointment.</p>
+<a href="contact.html">Book Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container footerContent">
+<div>© 2026 Nicka's Touch Salon & Romeo The Barber</div>
+<div>Your Style, Our Passion</div>
+</div>
+</footer>
+
+</body>
+</html>

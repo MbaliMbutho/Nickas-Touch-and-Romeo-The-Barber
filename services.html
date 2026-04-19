@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nicka's Touch Salon | Services</title>
+
+<style>
+
+/* ===== GLOBAL RESET ===== */
+/* Removes default browser spacing and standardizes layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Base page styling */
+body {
+    background: #F9F6F1;
+    color: #222;
+}
+
+/* Main container (centers content and limits width) */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ===== HEADER / NAVBAR ===== */
+header {
+    background: #00012A;
+}
+
+/* Navbar layout */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Logo image */
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* Navigation menu */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    color: #6BD425;
+}
+
+/* ===== PAGE TITLE ===== */
+.sectionFirst {
+    padding: 50px 0 10px;
+}
+
+.sectionFirst h1 {
+    font-size: 34px;
+}
+
+/* ===== SERVICES SECTION ===== */
+.aboutServices {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Highlight text (unused currently but available) */
+.ser-litText {
+    color: #6BD425;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Description text */
+.ser-text {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    line-height: 1.6;
+}
+
+/* Services grid layout */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+/* Individual service card */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.25s;
+}
+
+/* Hover effect (slight lift) */
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* Card image */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Caption text below image */
+.card .caption {
+    padding: 12px;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet view */
+@media (max-width: 900px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+
+    /* Stack navbar */
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Single column layout */
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Footer layout */
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <div class="container navbar">
+
+        <!-- Logo / Brand -->
+        <a href="#" class="logo">
+            <img src="./images/comb.jpg" alt="Salon logo">
+            Signature Cuts & Beauty
+        </a>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reviews.html">Reviews</a></li>				
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- ===== PAGE TITLE ===== -->
+<section class="sectionFirst">
+    <div class="container">
+        <h1>Our Services</h1>
+    </div>
+</section>
+
+<!-- ===== SERVICES CONTENT ===== -->
+<section class="aboutServices container">
+
+    <!-- Intro text -->
+    <p class="ser-text">
+        We provide professional braiding and barber services designed to keep you looking
+        stylish, confident, and well groomed.
+    </p>
+
+    <!-- Services grid -->
+    <div class="service-grid">
+
+        <!-- Service 1 -->
+        <div class="card">
+            <img src="./images/barber3.jpg" alt="Haircut service">
+            <div class="caption">Clean fades & modern cuts</div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="card">
+            <img src="./images/braids4.jpg" alt="Braiding service">
+            <div class="caption">Stylish braiding designs</div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="card">
+            <img src="./images/barber4.jpg" alt="Barber work">
+            <div class="caption">Precision grooming</div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="card">
+            <img src="./images/braids3.jpg" alt="Braids">
+            <div class="caption">Protective braid styles</div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="card">
+            <img src="./images/barber5.jpg" alt="Hair styling">
+            <div class="caption">Sharp and clean finishes</div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="card">
+            <img src="./images/braids5.jpg" alt="Braids work">
+            <div class="caption">Custom braid looks</div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container">
+        <div>© 2026 Nicka's Touch Salon and Romeo The Barber</div>
+        <div>Your Style, Our Passion</div>
+    </div>
+</footer>
+
+</body>
+</html>
