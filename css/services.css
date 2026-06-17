@@ -309,3 +309,16 @@ body{
         font-size:2rem;
     }
 }
+.search-container {
+    text-align: center;
+    margin: 25px 0;
+}
+
+#searchInput {
+    width: 80%;
+    max-width: 450px;
+    padding: 12px;
+    border: 2px solid #00012A;
+    border-radius: 8px;
+    font-size: 16px;
+}

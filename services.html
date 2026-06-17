@@ -2,47 +2,39 @@
 <html lang="en">
 
 <head>
-    <!-- Character Encoding -->
     <meta charset="UTF-8">
-
-    <!-- Responsive Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Main Stylesheet -->
+    <meta name="description" content="Explore professional haircuts, protective braids, grooming and styling services at Signature Cuts & Beauty.">
+    <meta name="keywords" content="barber, braids, haircuts, grooming, salon, Signature Cuts and Beauty">
+    <meta name="author" content="Signature Cuts & Beauty">
+
     <link rel="stylesheet" href="./css/style.css">
-
-    <!-- Services Page Stylesheet -->
     <link rel="stylesheet" href="./css/services.css">
-
-    <!-- Responsive Media Queries -->
     <link rel="stylesheet" href="./css/MediaQuery.css">
 
-    <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/7a6c6b42a6.js" crossorigin="anonymous"></script>
 
-    <!-- Page Title -->
-    <title>Nicka's Touch Salon | Services</title>
+    <title>Services | Signature Cuts & Beauty</title>
 </head>
 
 <body>
 
-    <!-- ================= HEADER SECTION ================= -->
     <header>
         <div class="container navbar">
 
-            <!-- Salon Logo and Brand Name -->
             <a href="home.html" class="logo">
-                <img src="./images/comb.jpg" alt="Salon logo">
+                <img src="./images/comb.jpg" alt="Signature Cuts and Beauty salon logo" loading="lazy">
                 Signature Cuts & Beauty
             </a>
 
-            <!-- Navigation Menu -->
             <nav>
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -50,106 +42,90 @@
         </div>
     </header>
 
-    <!-- ================= PAGE HEADING ================= -->
     <section class="sectionFirst">
         <div class="container">
-
-            <!-- Main Page Title -->
             <h1>Our Services</h1>
-
         </div>
     </section>
 
-    <!-- ================= SERVICES SECTION ================= -->
     <section class="aboutServices">
 
-        <!-- Section Heading -->
         <div class="ser-litText">
             Choose Your Favourite Hairstyle
         </div>
 
-        <!-- Section Description -->
         <p class="ser-text">
             Discover stylish braids, clean fades, modern cuts, and professional grooming services designed to keep you looking confident and feeling your best.
         </p>
 
-        <!-- Services Grid -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search services...">
+        </div>
+
         <div class="ser-box">
 
-            <!-- Service 1 -->
             <div class="box">
                 <div class="img">
-                    <img src="./images/barber1.jpg" alt="Precision Haircuts">
+                    <img src="./images/barber1.jpg" alt="Precision Haircuts" loading="lazy">
                 </div>
-
                 <div class="boxinfo">
                     <div class="ser-name">
-                        &nbsp;&nbsp;&nbsp;&nbsp;Precision Haircuts
+                        Precision Haircuts
                     </div>
                 </div>
             </div>
 
-            <!-- Service 2 -->
             <div class="box">
                 <div class="img">
-                    <img src="./images/braids4.jpg" alt="Protective Braids">
+                    <img src="./images/braids4.jpg" alt="Protective Braids" loading="lazy">
                 </div>
-
                 <div class="boxinfo">
                     <div class="ser-name">
-                        &nbsp;&nbsp;&nbsp;&nbsp;Protective Braids
+                        Protective Braids
                     </div>
                 </div>
             </div>
 
-            <!-- Service 3 -->
             <div class="box">
                 <div class="img">
-                    <img src="./images/barber3.jpg" alt="Professional Grooming">
+                    <img src="./images/barber3.jpg" alt="Professional Grooming" loading="lazy">
                 </div>
-
                 <div class="boxinfo">
                     <div class="ser-name">
-                        &nbsp;&nbsp;&nbsp;&nbsp;Professional Grooming
+                        Professional Grooming
                     </div>
                 </div>
             </div>
 
-            <!-- Service 4 -->
             <div class="box">
                 <div class="img">
-                    <img src="./images/braids2.jpg" alt="Custom Styling">
+                    <img src="./images/braids2.jpg" alt="Custom Styling" loading="lazy">
                 </div>
-
                 <div class="boxinfo">
                     <div class="ser-name">
-                        &nbsp;&nbsp;&nbsp;&nbsp;Custom Styling
+                        Custom Styling
                     </div>
                 </div>
             </div>
 
-            <!-- Service 5 -->
             <div class="box">
                 <div class="img">
-                    <img src="./images/barber5.jpg" alt="Luxury Barber Experience">
+                    <img src="./images/barber5.jpg" alt="Luxury Barber Experience" loading="lazy">
                 </div>
-
                 <div class="boxinfo">
                     <div class="ser-name">
-                        &nbsp;&nbsp;&nbsp;&nbsp;Luxury Barber Experience
+                        Luxury Barber Experience
                     </div>
                 </div>
             </div>
 
-            <!-- Service 6 -->
             <div class="box">
                 <div class="img">
-                    <img src="./images/braids.jpg" alt="Creative Braiding Designs">
+                    <img src="./images/braids.jpg" alt="Creative Braiding Designs" loading="lazy">
                 </div>
-
                 <div class="boxinfo">
                     <div class="ser-name">
-                        &nbsp;&nbsp;&nbsp;&nbsp;Creative Braiding Designs
+                        Creative Braiding Designs
                     </div>
                 </div>
             </div>
@@ -157,24 +133,19 @@
         </div>
     </section>
 
-    <!-- ================= FOOTER SECTION ================= -->
     <footer>
-
         <div class="container footerContent">
-
-            <!-- Copyright Information -->
             <div>
                 © 2026 Nicka's Touch Salon and Romeo The Barber
             </div>
 
-            <!-- Business Slogan -->
             <div>
                 Your Style, Our Passion
             </div>
-
         </div>
-
     </footer>
+
+    <script src="./js/script.js"></script>
 
 </body>
 </html>

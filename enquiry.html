@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Enquire about services, pricing and availability at Signature Cuts & Beauty.">
+    <meta name="keywords" content="salon enquiry, braids enquiry, barber booking">
+    <meta name="author" content="Signature Cuts & Beauty">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <title>Enquiry | Signature Cuts & Beauty</title>
+</head>
+
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="page-video">
+        <source src="./live background/wallpaper.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay -->
+    <div class="page-overlay"></div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container navbar">
+
+            <a href="home.html" class="logo">
+                <img src="./images/comb.jpg" alt="Salon Logo">
+                Signature Cuts & Beauty
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- PAGE TITLE -->
+    <section class="sectionFirst">
+        <div class="container">
+            <h1>Service Enquiry</h1>
+        </div>
+    </section>
+
+    <!-- ENQUIRY FORM -->
+    <section class="FormMap">
+
+        <div class="form">
+
+            <div class="f-head">
+                Make an Enquiry
+            </div>
+
+            <div class="f-para">
+                Ask about pricing, services, or availability
+            </div>
+
+            <form id="enquiryForm">
+
+                <label>Name</label>
+                <input type="text" id="enquiryName" placeholder="Your name" required>
+
+                <label>Email</label>
+                <input type="email" id="enquiryEmail" placeholder="your@email.com" required>
+
+                <label>Service</label>
+                <select id="service" required>
+                    <option value="">Select a service</option>
+                    <option value="Haircut">Haircut</option>
+                    <option value="Braids">Braids</option>
+                    <option value="Grooming">Grooming</option>
+                    <option value="Styling">Styling</option>
+                </select>
+
+                <label>Enquiry Type</label>
+                <select id="enquiryType" required>
+                    <option value="">Select enquiry type</option>
+                    <option value="Price">Price</option>
+                    <option value="Availability">Availability</option>
+                    <option value="Booking">Booking</option>
+                </select>
+
+                <label>Message</label>
+                <textarea id="enquiryMessage" rows="5" placeholder="Type your enquiry here..." required></textarea>
+
+                <button type="submit">
+                    Submit Enquiry
+                </button>
+
+                <p id="enquiryResponse"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div>
+                © 2026 Nicka's Touch Salon and Romeo The Barber
+            </div>
+
+            <div>
+                Your Style, Our Passion
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

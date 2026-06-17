@@ -2,114 +2,94 @@
 <html lang="en">
 
 <head>
-
-    <!-- Character Encoding -->
     <meta charset="UTF-8">
-
-    <!-- Responsive Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Contact Page Stylesheet -->
+    <meta name="description" content="Contact Signature Cuts & Beauty for appointments, enquiries, grooming, braiding and barber services.">
+    <meta name="keywords" content="contact salon, barber booking, braids appointment, Signature Cuts and Beauty">
+    <meta name="author" content="Signature Cuts & Beauty">
+
     <link rel="stylesheet" href="./css/contact.css">
 
-    <!-- Page Title -->
     <title>Contact | Signature Cuts & Beauty</title>
-
 </head>
 
 <body>
 
-    <!-- ================= LIVE VIDEO BACKGROUND ================= -->
-
-    <!-- Background Video -->
     <video autoplay muted loop playsinline class="page-video">
         <source src="./live background/wallpaper.mp4" type="video/mp4">
     </video>
 
-    <!-- Dark Overlay for Better Readability -->
     <div class="page-overlay"></div>
 
-    <!-- ================= HEADER / NAVIGATION ================= -->
-
     <header>
-
         <div class="container navbar">
 
-            <!-- Logo and Business Name -->
             <a href="home.html" class="logo">
-                <img src="./images/comb.jpg" alt="Salon Logo">
+                <img src="./images/comb.jpg" alt="Signature Cuts and Beauty salon logo" loading="lazy">
                 Signature Cuts & Beauty
             </a>
 
-            <!-- Navigation Menu -->
             <nav>
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
 
         </div>
-
     </header>
 
-    <!-- ================= PAGE TITLE SECTION ================= -->
-
     <section class="sectionFirst">
-
         <div class="container">
-
-            <!-- Main Contact Page Heading -->
             <h1>Contact Us</h1>
-
         </div>
-
     </section>
-
-    <!-- ================= CONTACT FORM SECTION ================= -->
 
     <section class="FormMap">
 
-        <!-- Contact Form Container -->
         <div class="form">
 
-            <!-- Form Heading -->
             <div class="f-head">
                 Get In Touch
             </div>
 
-            <!-- Form Subheading -->
             <div class="f-para">
                 Contact us for more information
             </div>
 
-            <!-- Contact Form -->
-            <!-- Note: Form is currently frontend only and not connected to a database or email service -->
-            <form>
+            <form id="contactForm">
 
-                <!-- Customer Name Input -->
                 <label>Name</label>
-                <input type="text" placeholder="Your name" required>
+                <input type="text" id="contactName" placeholder="Your name" required>
 
-                <!-- Customer Phone Number Input -->
                 <label>Phone</label>
-                <input type="tel" placeholder="e.g. 071 234 5678" required>
+                <input type="tel" id="contactPhone" placeholder="e.g. 071 234 5678" required>
 
-                <!-- Customer Email Input -->
                 <label>Email</label>
-                <input type="email" placeholder="your@email.com" required>
+                <input type="email" id="contactEmail" placeholder="your@email.com" required>
 
-                <!-- Customer Message Input -->
+                <label>Message Type</label>
+                <select id="messageType" required>
+                    <option value="">Select message type</option>
+                    <option value="General Enquiry">General Enquiry</option>
+                    <option value="Booking">Booking</option>
+                    <option value="Complaint">Complaint</option>
+                    <option value="Feedback">Feedback</option>
+                </select>
+
                 <label>Message</label>
-                <textarea rows="5" placeholder="Type your message here..."></textarea>
+                <textarea id="contactMessage" rows="5" placeholder="Type your message here..." required></textarea>
 
-                <!-- Submit Button -->
                 <button type="submit">
                     Send Message
                 </button>
+
+                <p id="formMessage"></p>
 
             </form>
 
@@ -117,26 +97,19 @@
 
     </section>
 
-    <!-- ================= FOOTER SECTION ================= -->
-
     <footer>
-
         <div class="container">
-
-            <!-- Copyright Information -->
             <div>
                 © 2026 Nicka's Touch Salon and Romeo The Barber
             </div>
 
-            <!-- Business Slogan -->
             <div>
                 Your Style, Our Passion
             </div>
-
         </div>
-
     </footer>
 
-</body>
+    <script src="./js/script.js"></script>
 
+</body>
 </html>
